@@ -2,7 +2,15 @@
   "name": "x-ray-chrome",
   "version": "1.0.1",
   "description": "x-ray chrome driver using puppeteer",
-  "keywords": ["scraper","x-ray","chrome","puppeteer","nodejs","scrape","cheerio"],
+  "keywords": [
+    "scraper",
+    "x-ray",
+    "chrome",
+    "puppeteer",
+    "nodejs",
+    "scrape",
+    "cheerio"
+  ],
   "author": {
     "name": "Mike Antoniadis",
     "email": "ssbeefeater@gmail.com"
@@ -28,15 +36,15 @@
     "@types/jest": "^23.3.1",
     "@types/lodash": "^4.14.115",
     "@types/node": "^10.5.2",
-    "@types/puppeteer": "^1.5.1",
+    "@types/puppeteer": "^1.12.1",
     "@types/x-ray": "^2.3.2",
+    "@types/x-ray-crawler": "^2.0.0",
     "concurrently": "^3.6.0",
     "esnext": "^3.3.1",
     "jest": "^23.4.0",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "typedoc-plugin-markdown": "^1.1.13",
-    "typescript": "^2.9.2",
-    "x-ray": "^2.3.3"
+    "typescript": "^3.3.3333"
   }
 }
