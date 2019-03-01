@@ -27,7 +27,7 @@ export interface XRayChromeOptions extends Puppeteer.LaunchOptions {
      * A function that will be called after the page load and before the page content will be return giving the power to interact
      * with the current page using puppeteer methods like page.click([selector]).
      */
-    cl?: (page: Puppeteer.Page, ctx: Context) => void;
+    cl?: (page: Puppeteer.Page, ctx: Context, navigationOptions: Puppeteer.NavigationOptions) => void;
     /**
      * The options to set to page.goTo method.
      */
