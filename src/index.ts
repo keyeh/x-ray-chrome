@@ -50,9 +50,10 @@ export const xRayChrome = (options: XRayChromeOptions = {}): Driver => {
         const page = await browser.newPage();
         try {
             await page.setViewport(viewPort);
-            await page.goto(ctx.url, navigationOptions);
             if (typeof cl === 'function') {
-                await cl(page, ctx);
+                await cl(page, ctx, navigationOptions);
+            } else {
+                await page.goto(ctx.url, navigationOptions);
             }
 
             if (!ctx.body) {
